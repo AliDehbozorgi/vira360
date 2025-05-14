@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>360 ویرا </title>
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!--  -->
+    <!-- اضافه کردن فونت فارسی -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/dark-theme.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+      @import url("https://v1.fontapi.ir/css/Vazir");
+    </style>
+  </head>
+  <body class="dark-theme">
+    <!-- ذرات پس‌زمینه -->
+    <div class="particles-js"></div>
+
+    <!-- ناوبری -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand" href="#home">
+              <img src="images/logo/white-logo.png" style="max-width: 160px" alt="" />
+            </a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home" data-translate="home">خانه</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" data-translate="about"> درباره ما</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services" data-translate="services">خدمات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio" data-translate="portfolio">نمونه کارها</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team" data-translate="team">تیم ما</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" data-translate="contact">تماس با ما</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-outline-accent ms-lg-3" data-translate="blog" href="blog/">بلاگ</a></li>
+          </ul>
+        </div>
+        <div class="language-switcher ms-3">
+          <a href="index-En.html" class="lang-btn active" data-lang="en">EN</a>
+          <a href="index.html" class="lang-btn" data-lang="fa">فارسی</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- بخش هیرو -->
+    <section id="home" class="hero-section vh-100">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-6 hero-content">
+            <h6 class="text-uppercase text-accent mb-4">
+              <span class="typing-animation"></span>
+            </h6>
+            <h2>برنامه ریزی و اجرا</h2>
+            <h1 class="hero-title mb-4">در شیراز <span class="text-gradient">خدمات دیجیتال مارکتینگ</span></h1>
+            <p class="hero-subtitle mb-5">بازاریابی، سئو تبلیغات در ایران و خاورمیانه<br />طراحی وب‌سایت، اپلیکیشن‌ وب و موبایل</p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-accent btn-lg me-3 pulse-effect">شروع کنید</a>
+              <a href="#services" class="btn btn-outline-light btn-lg">خدمات ما</a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-image-wrapper">
+            <div class="hero-image">
+              <img src="images/hero-illustration.png" alt="Digital Marketing" class="img-fluid floating" />
+              <div class="glow-effect"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- اسکرول داون -->
+      <div class="scroll-down-indicator">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text">به پایین اسکرول کنید</span>
+      </div>
+    </section>
+    <div id="particles-js"></div>
+    <!-- این خط را اضافه کنید -->
+    <br />
+
+    <!-- About Us Section -->
+
+    <section id="about" class="about-section py-5 mt-5">
+      <!-- mt-5 برای مارجین بالا -->
+      <br />
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 about-image-wrapper">
+            <div class="about-image glass-card floating" data-tilt>
+              <img src="images/about-team.jpg" alt="Our Team" class="img-fluid rounded-4" />
+              <div class="glow-effect"></div>
+            </div>
+          </div>
+          <div class="col-lg-6 about-content">
+            <h2 class="display-5 fw-bold mb-5"><span class="text-gradient">درباره</span> 360 Vira</h2>
+            <p class="lead mb-4">ما فقط یک آژانس بازاریابی نیستیم، ما شریک رشد شما هستیم.</p>
+
+            <!-- مرتب‌سازی آیکون‌ها با بوت‌استرپ -->
+            <div class="row g-4 about-features">
+              <div class="col-12 col-md-6 feature-item d-flex align-items-start">
+                <i class="fas fa-rocket text-accent fa-2x me-3 mt-1"></i>
+                <div>
+                  <h4 class="mb-1">استراتژی داده‌محور و تحلیل پیشرفته</h4>
+                  <p class="mb-0">کمپین‌های ما بر اساس داده‌های واقعی و ابزارهای تحلیلی طراحی میشوند تا بازدهی تبلیغات شما حداکثر شود.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 feature-item d-flex align-items-start">
+                <i class="fas fa-rocket text-accent fa-2x me-3 mt-1"></i>
+                <div>
+                  <h4 class="mb-1">تبلیغات هدفمند در گوگل و شبکه‌های اجتماعی</h4>
+                  <p class="mb-0">با استفاده از گوگل ادز، متا ادز و تبلیغات اینستاگرام، مشتریان ایده‌آل شما را دقیقاً هدفگیری میکنیم تا نرخ تبدیل (Conversion) افزایش یابد.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 feature-item d-flex align-items-start">
+                <i class="fas fa-rocket text-accent fa-2x me-3 mt-1"></i>
+                <div>
+                  <h4 class="mb-1">سئوی حرفهای برای رتبه بندی بالاتر</h4>
+                  <p class="mb-0">با بهینه سازی تخصصی سئو، سایت شما در نتایج گوگل جایگاه بهتری پیدا میکند و ترافیک ارگانیک افزایش مییابد.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 feature-item d-flex align-items-start">
+                <i class="fas fa-globe text-accent fa-2x me-3 mt-1"></i>
+                <div>
+                  <h4 class="mb-1">طراحی سایت سفارشی و کاربرمحور</h4>
+                  <p class="mb-0">سایتهای ما بر اساس نیازهای دقیق کسبوکار شما طراحی میشوند تا تجربه کاربری (UX) بینظیری ارائه دهند</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- آمارها (بدون تغییر درخواست شما) -->
+            <div class="stats-container mt-5 d-flex gap-4">
+              <div class="stat-item text-center flex-fill">
+                <div class="stat-number" data-count="150">24</div>
+                <div class="stat-label">پروژه های تکمیل شده</div>
+              </div>
+              <div class="stat-item text-center flex-fill">
+                <div class="stat-number" data-count="95">21</div>
+                <div class="stat-label">رضایت مشتریان</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5 bg-darker mt-5">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title"><span class="text-gradient">خدمات</span> ما</h2>
+          <p class="section-subtitle">راهکارهای جامع برای حضور دیجیتال شما</p>
+        </div>
+
+        <div class="services-grid ">
+
+          <div class="service-card glass-card col-12 col-lg-4" data-tilt>
+            <div class="service-icon pulse">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>بازاریابی دیجیتال</h3>
+            <p>استراتژی‌های بازاریابی ۳۶۰ درجه، متناسب با کسب‌و‌کار شما</p>
+            <div class="service-cta">
+              <span class="hover-effect">بیشتر بدانید</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+
+          <div class="service-card glass-card col-12 col-lg-4" data-tilt>
+            <div class="service-icon pulse">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>توسعه وب</h3>
+            <p>وب‌سایت‌های سفارشی که نتایج واقعی و تعامل کاربران را به همراه دارند</p>
+            <div class="service-cta">
+              <span class="hover-effect">بیشتر بدانید</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="service-card glass-card col-12 col-lg-4" data-tilt>
+            <div class="service-icon pulse">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>طراحی رابط و تجربه کاربری</h3>
+            <p>ما بر طراحی رابط‌های کاربری شهودی و ایجاد تجربه‌ای روان و یکپارچه برای اپلیکیشن‌ها و وب‌سایت‌ها تمرکز داریم</p>
+            <div class="service-cta">
+              <span class="hover-effect">بیشتر بدانید</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="service-card glass-card col-12 col-lg-4" data-tilt>
+            <div class="service-icon pulse">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>تبلیغات</h3>
+            <p>ما کمپین‌های تبلیغاتی آنلاین و آفلاینِ جذابی ارائه می‌دهیم که متناسب با مخاطبان شما طراحی شده‌اند.</p>
+            <div class="service-cta">
+              <span class="hover-effect">بیشتر بدانید</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="service-card glass-card col-12 col-lg-4" data-tilt>
+            <div class="service-icon pulse">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>بازاریابی در موتورهای جستجو</h3>
+            <p>
+              خدمات سئو و بازاریابی موتورهای جستجوی ما، با بهینه‌سازی کلمات کلیدی، تدوین استراتژی‌های محتوایی و اجرای کمپین‌های تبلیغاتی هدفمند، موجب افزایش دیده‌شدن آنلاین شما و
+              جذب ترافیک می‌شود.
+            </p>
+            <div class="service-cta">
+              <span class="hover-effect">بیشتر بدانید</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="service-card glass-card col-12 col-lg-4" data-tilt>
+            <div class="service-icon pulse">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>مشاور امور فروش</h3>
+            <p>مشاوران فروش ما با ارائه راهنمایی‌های تخصصی، به بهینه‌سازی فرآیندهای فروش شما کمک می‌کنند.</p>
+            <div class="service-cta">
+              <span class="hover-effect">بیشتر بدانید</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- 6 سرویس دیگر به همین شکل -->
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#contact" class="btn btn-accent btn-lg pulse-effect">
+            دریافت پیشنهاد سفارشی
+            <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--portfolio section-->
+
+    <section id="portfolio" class="portfolio-section py-5 mt-5">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title"><span class="text-gradient"> نمونه کارها</span></h2>
+          <p class="section-subtitle">پروژه‌های موفق و مطالعات موردی ما را ببینید</p>
+        </div>
+
+        <div class="portfolio-filter mb-4 text-center">
+          <button class="filter-btn btn btn-outline-primary active" data-filter="all">همه</button>
+          <button class="filter-btn btn btn-outline-primary" data-filter="web">طراحی وب</button>
+          <button class="filter-btn btn btn-outline-primary" data-filter="marketing">بازاریابی</button>
+          <button class="filter-btn btn btn-outline-primary" data-filter="branding">برند سازی</button>
+        </div>
+
+        <div class="portfolio-grid row g-4">
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web1.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web2.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web3.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web4.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web5.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web6.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web7.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web8.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web9.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web10.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="web">
+            <div class="portfolio-card">
+              <img src="images/portfolio/web11.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- marketing -->
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="marketing/Picture1.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="marketing/Picture3.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="marketing/Picture4.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="marketing/Picture5.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="marketing/Picture6.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="marketing/Picture7.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="marketing/Picture8.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- branding -->
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="branding/branding2.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="branding/branding 3.png" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web col-sm-6 col-md-4 col-lg-3" data-category="marketing">
+            <div class="portfolio-card">
+              <img src="branding/branding4.jpg" alt="Web Project" class="img-fluid rounded" />
+              <div class="portfolio-overlay">
+                <h4>E-commerce Website</h4>
+                <p>300% increase in conversions</p>
+                <a href="#" class="portfolio-link">
+                  <i class="fas fa-expand"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- آیتم های دیگر با کلاس های مشابه -->
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-outline-light btn-lg">
+            دیدن همه پروژه ها
+            <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section py-5 bg-darker">
+      <div class="container ">
+        <div class="section-header">
+          <h2 class="section-title">اشنا بشید با <span class="text-gradient">تیم ما</span></h2>
+          <p class="section-subtitle">ذهن های خلاق پشت موفقیت شما</p>
+        </div>
+        <div class="row ">
+        <div class="team-members">
+            <div class=" glass-card col-12 col-lg-3 " data-tilt>
+              <div class="member-image text-center">
+                <img src="images/team/member1.jpg" alt="Team Member" class="img-fluid" style="border-radius: 12px" />
+              </div>
+              <div class="social-links mt-4 mb-3">
+                <a href="#"><i class="fab fa-linkedin fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-twitter fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-instagram fs-5 text-white"></i></a>
+              </div>
+              <div class="member-info">
+                <h4>بهناز مراقب</h4>
+                <p>شریک مؤسس و سئو</p>
+                <div class="member-skills">
+                  <span>مدیریت </span>
+                  <span>استراتژی</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3  glass-card" data-tilt>
+              <div class="member-image text-center">
+                <img src="images/team/Capture-dr rabiyi.JPG" alt="Team Member" class="img-fluid" style="border-radius: 12px" />
+              </div>
+              <div class="social-links mt-4 mb-3">
+                <a href="#"><i class="fab fa-linkedin fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-twitter fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-instagram fs-5 text-white"></i></a>
+              </div>
+              <div class="member-info">
+                <h4>مهرزاد</h4>
+                <p>مشاور سئو</p>
+                <div class="member-skills">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class=" glass-card col-12 col-lg-3" data-tilt>
+              <div class="member-image text-center">
+                <img src="images/team/Screenshot 2025-05-12 214521.jpg" alt="Team Member" class="img-fluid" style="border-radius: 12px" />
+              </div>
+              <div class="social-links mt-4 mb-3">
+                <a href="#"><i class="fab fa-linkedin fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-twitter fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-instagram fs-5 text-white"></i></a>
+              </div>
+              <div class="member-info">
+                <h4>محمود پرمشکانی</h4>
+                <p>طراح گرافیک</p>
+                <div class="member-skills">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class=" glass-card col-12 col-lg-3" data-tilt>
+              <div class="member-image text-center">
+                <img src="images/team/e44df679-e885-40fe-9831-165a9f52cb2a.jpg" alt="Team Member" class="img-fluid" style="border-radius: 12px" />
+              </div>
+              <div class="social-links mt-4 mb-3">
+                <a href="#"><i class="fab fa-linkedin fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-twitter fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-instagram fs-5 text-white"></i></a>
+              </div>
+              <div class="member-info">
+                <h4>الهام حسینی</h4>
+                <p>رئیس شرکت و شریک مؤسس </p>
+                <div class="member-skills">
+                  <span>طراح</span>
+                  <span> وبسایت</span>
+                </div>
+              </div>
+            </div>
+            <div class=" glass-card col-12 col-lg-3" data-tilt>
+              <div class="member-image text-center">
+                <img src="images/team/araj.jpg" alt="Team Member" class="img-fluid" style="border-radius: 12px" />
+              </div>
+              <div class="social-links mt-4 mb-3">
+                <a href="#"><i class="fab fa-linkedin fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-twitter fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-instagram fs-5 text-white"></i></a>
+              </div>
+              <div class="member-info">
+                <h4>فاطمه عرج</h4>
+                <p>مترجم، متخصص بازاریابی برای کشورهای عربی</p>
+                <div class="member-skills">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="  glass-card col-12 col-lg-3" data-tilt>
+              <div class="member-image text-center">
+                <img src="images/team/WhatsApp Image 2025-04-15 at 10.09.58.jpeg" alt="Team Member" class="img-fluid" style="border-radius: 12px" />
+              </div>
+              <div class="social-links mt-4 mb-3">
+                <a href="#"><i class="fab fa-linkedin fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-twitter fs-5 text-white ps-1"></i></a>
+                <a href="#"><i class="fab fa-instagram fs-5 text-white"></i></a>
+              </div>
+              <div class="member-info">
+                <h4>هستی</h4>
+                <p>طراح گرافیک  و طراح رابط کاربری</p>
+                <div class="member-skills">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <!-- 3 عضو دیگر تیم به همین شکل -->
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 contact-info">
+            <h2 class="section-title">با ما <span class="text-gradient">در ارتباط باشید</span></h2>
+            <p class="lead">اماده شروع پروژتون هستید؟ ما اینجا هستیم تا به شما کمک کنیم</p>
+
+            <div class="contact-methods">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt text-accent"></i>
+                <div>
+                  <h5>دفتر ما</h5>
+                  <p>شیراز,خیابان خلیلی,نبش کوچه دوازده,طبقه فوقانی داروخانه,واحد 11</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-envelope text-accent"></i>
+                <div>
+                  <h5>به ما ایمیل بزنید</h5>
+                  <p>info@360vira.ir</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone-alt text-accent"></i>
+                <div>
+                  <h5>با ما تماس بگیرید</h5>
+                  <p>+98 922 2730 378</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-media mt-4 fs-4 contact-item">
+              <a href="#" class="social-icon text-white"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon text-white"><i class="fab fa-telegram"></i></a>
+              <a href="#" class="social-icon text-white"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="social-icon text-white"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 contact-form-wrapper">
+            <form class="contact-form glass-card">
+              <div class="form-floating mb-4">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                <label for="name">Your Name</label>
+              </div>
+
+              <div class="form-floating mb-4">
+                <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                <label for="email">Your Email</label>
+              </div>
+
+              <div class="form-floating mb-4">
+                <select class="form-select" id="service">
+                  <option selected>یک خدمت انتخاب کنید</option>
+                  <option>طراحی وبسایت</option>
+                  <option>بازاریابی دیجیتال</option>
+                  <option>برندینگ</option>
+                  <option>دیگر</option>
+                </select>
+                <label for="service">Service Needed</label>
+              </div>
+
+              <div class="form-floating mb-4">
+                <textarea class="form-control" id="message" style="height: 120px" placeholder="Your Message"></textarea>
+                <label for="message">پیام شما</label>
+              </div>
+
+              <button type="submit" class="btn btn-accent btn-lg w-100">
+                فرستادن پیام
+                <i class="fas fa-paper-plane ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer mt-5 text-center">
+      <hr class="mt-3 mb-4 pb-3" />
+      <p class="fw-bolder mb-4">
+        تمامی محتوای این وب‌سایت شامل متن‌ها، تصاویر، ویدیوها و طرح‌ها متعلق به <span class="text-gradient">[vira 360]</span> بوده و هرگونه استفاده، کپی‌برداری، بازنشر یا بازتولید
+        بدون کسب اجازه کتبی، پیگرد قانونی دارد.
+      </p>
+    </section>
+    <!-- اسکریپت‌ها -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <!-- slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--  -->
+    <!-- قبل از home-animations.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="js/home-animations.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var iso = new Isotope(".portfolio-grid", {
+          itemSelector: ".portfolio-item",
+          layoutMode: "fitRows",
+        });
+
+        var filterButtons = document.querySelectorAll(".filter-btn");
+        filterButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            var filterValue = button.getAttribute("data-filter");
+            iso.arrange({ filter: filterValue === "all" ? "*" : "." + filterValue });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,525 @@
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('./fonts/Vazirmatn/Vazirmatn-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('./fonts/Vazirmatn/Vazirmatn-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('./fonts/Vazirmatn/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('./fonts/Vazirmatn/Vazirmatn-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-darker: #050505;
+    --primary-accent: #ff6e00;
+    --secondary-accent: #ff8c42;
+    --text-primary: rgba(255,255,255,0.95);
+    --text-secondary: rgba(255,255,255,0.7);
+    --glass-dark: rgba(15,15,15,0.6);
+    --glass-border: rgba(255,255,255,0.1);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Vazirmatn','Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ناوبری شیشه‌ای */
+.navbar {
+    background: var(--glass-dark) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    position: relative;
+    padding: 8px 15px !important;
+    margin: 0 5px !important;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-accent);
+    transition: width 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+/* هیرو سکشن با افکت پارالاکس */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 800px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 30px 0;
+    background: linear-gradient(90deg, #fff 0%, #aaa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+}
+
+/* افکت ذرات پس‌زمینه */
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* کارت‌های شیشه‌ای */
+.glass-card {
+    background: var(--glass-dark);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 40px;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 110, 0, 0.15);
+    border-color: rgba(255, 110, 0, 0.3);
+}
+
+/* افکت‌های حاشیه نئون */
+.neon-border {
+    position: relative;
+}
+
+.neon-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--primary-accent) 0%, var(--secondary-accent) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.glass-card:hover .neon-border::after {
+    opacity: 1;
+}
+
+/* انیمیشن تایپینگ */
+.type-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.type-animation::after {
+    content: '|';
+    position: absolute;
+    right: -10px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+/* انیمیشن تایپینگ */
+.typing-animation {
+    position: relative;
+}
+.typing-animation::after {
+    content: "|";
+    position: absolute;
+    right: -8px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* افکت شناور برای تصویر هیرو */
+.floating {
+    animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* دکمه‌های پالس */
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 110, 0, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 110, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 110, 0, 0); }
+}
+
+/* نشانگر اسکرول */
+.scroll-down-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.chevron {
+    width: 20px;
+    height: 5px;
+    background: var(--text-primary);
+    margin: 3px auto;
+    border-radius: 3px;
+    animation: moveDown 1.4s infinite ease-in-out;
+}
+
+.chevron:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.chevron:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes moveDown {
+    0% { opacity: 0; transform: translateY(-10px); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(10px); }
+}
+
+/* استایل‌های particles.js */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* زیر تمام عناصر دیگر */
+    background-color: var(--bg-dark);
+    pointer-events: none; /* اجازه کلیک روی عناصر دیگر را بدهد */
+}
+
+/* برای تضمین نمایش صحیح در بخش هیرو */
+.hero-section {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+/* تایلو افکت برای کارت‌ها */
+[data-tilt] {
+    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+}
+
+/* افکت hover برای دکمه‌ها */
+.hover-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-effect::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary-accent);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* انیمیشن شماره‌های آماری */
+@keyframes countUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-accent);
+    animation: countUp 1s ease forwards;
+}
+
+/* استایل‌های مخصوص فرم تماس */
+.contact-form {
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.form-control, .form-select {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+.form-control:focus, .form-select:focus {
+    background: rgba(255,255,255,0.2);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 0 0.25rem rgba(255, 110, 0, 0.25);
+}
+
+/* استایل‌های فیلتر پورتفولیو */
+.portfolio-filter {
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    color: var(--primary-accent);
+}
+
+.filter-btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-accent);
+    transition: width 0.3s ease;
+}
+
+.filter-btn.active::after {
+    width: 100%;
+}
+/* استایل سوئیچ زبان */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.lang-btn.active {
+    background: rgba(255, 110, 0, 0.2);
+    color: var(--primary-accent);
+    font-weight: 600;
+}
+
+/* استایل های RTL */
+body[dir="rtl"] {
+
+    font-family: Vazir, sans-serif;
+    text-align: right;
+}
+
+body[dir="rtl"] .navbar-brand,
+body[dir="rtl"] .section-title,
+body[dir="rtl"] .hero-title {
+    font-family: Vazir, sans-serif;
+}
+
+body[dir="rtl"] .ms-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+body[dir="rtl"] .me-3 {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+}
+body[dir="rtl"] {
+    line-height: 1.8;
+}
+
+body[dir="rtl"] .navbar-nav {
+    padding-right: 0;
+}
+
+body[dir="rtl"] .form-floating > label {
+    right: auto;
+    left: 0;
+    transform-origin: right top;
+}
+
+body[dir="rtl"] .contact-item i {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/* تنظیمات فونت برای عناوین */
+body[dir="rtl"] .section-title {
+    font-weight: 700;
+}
+
+/* تنظیمات دکمه ها در حالت RTL
+body[dir="rtl"] .btn i {
+    margin-right: 5px;
+    margin-left: 0;
+} */
+.team-members {
+    display: flex;
+    flex-wrap: wrap; /*اجازه می‌دهد اعضا به خط بعدی بروند*/
+    gap: rem; /* فاصله بین اعضا */
+    /* justify-content: flex-start; یا center یا space-between بسته به نیاز */
+}
+.team-member {
+    flex: 0 0 23%; /*تقریباً عرض یک چهارم با کمی فاصله*/
+    box-sizing: border-box; /* برای در نظر گرفتن padding و border در عرض */
+}
+.services-grid {
+    display: flex;
+    flex-wrap: wrap; /* اجازه می‌دهد کارت‌ها به خط بعدی بروند */
+    /* gap: 0.01rem; فاصله بین کارت‌ها */
+    justify-content: flex-start; /* یا center، بسته به نیاز */
+}
+
+.service-card {
+    /* flex: 0 0 30%; عرض تقریبی هر کارت */
+    box-sizing: border-box;
+}
+/* استایل‌های سکشن About */
+.about-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #ff6e00 0%, #ff8c42 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.counter {
+    display: inline-block;
+    transition: all 1s ease;
+}
+
+/* افکت‌های تصویر */
+.about-section img {
+    transition: transform 0.5s ease;
+}
+
+.about-section:hover img {
+    transform: scale(1.02);
+}
+
+/* استایل آیکون‌ها */
+.about-section .fa-2x {
+    transition: transform 0.3s ease;
+}
+
+.about-section .col-md-6:hover .fa-2x {
+    transform: translateY(-5px);
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* فاصله مناسب بین آیکون و متن */
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    font-size: 1.75rem; /* بزرگ‌تر برای برجسته بودن */
+    color: #ff6f61; /* رنگ آیکون که میتونه همون کلاس text-accent باشه */
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0; /* سایز آیکون ثابت بمونه */
+}
+
+.contact-item h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* برای بهبود رنگ و ظرافت */
+.contact-info {
+    max-width: 450px;
+    /* می‌تونید عرض محدود تر برای نظم بهتر */
+}  
